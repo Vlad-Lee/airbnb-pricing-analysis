@@ -58,7 +58,7 @@ Raw data is not included in this repository.
 Cleaning steps are documented in `01_data_cleaning.ipynb`.
 
 Key decisions:
-- Cleaned and converted price and percentage columns from string to numeric
+- Convert boolean, percent, price, and date fields to usable data types
 - Removed listings with long minimum stays to avoid monthly pricing bias
 - Created price per guest to normalize across listing sizes
 - Investigated and handled extreme outliers
