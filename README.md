@@ -40,8 +40,7 @@ Airbnb listings vary widely in price even within the same city. This analysis fo
 
 ## Data
 
-Source: Inside Airbnb (Seattle): 
-[Inside Airbnb Data](https://insideairbnb.com/get-the-data/)
+[Source: Inside Airbnb (Seattle)](https://insideairbnb.com/get-the-data/)
 
 The dataset includes listing level information such as:
 - price
