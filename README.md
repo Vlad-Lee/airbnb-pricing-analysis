@@ -10,9 +10,6 @@ This repository contains my individual contribution to a larger group project. I
 ### Neighborhood Price Differences
 ![Neighborhood Prices](figures/neighborhood_prices.png)
 
-### Price vs Bedrooms
-![Price vs Bedrooms](figures/median_price_num_bedrooms.png)
-
 ### Price by Room Type
 ![Room Type](figures/median_price_room_type.png)
 
