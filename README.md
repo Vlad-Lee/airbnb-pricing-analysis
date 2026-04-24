@@ -5,6 +5,9 @@ This project analyzes Airbnb listing prices in Seattle using public data from In
 
 This repository contains my individual contribution to a larger group project. I was responsible for data cleaning and the analysis of neighborhood-level pricing patterns.
 
+## Research Question
+How do Airbnb prices vary across Seattle neighborhoods, and what listing characteristics help explain those differences?
+
 ## Example Results
 
 ### Neighborhood Price Differences
@@ -13,14 +16,11 @@ This repository contains my individual contribution to a larger group project. I
 ### Price by Room Type
 ![Room Type](figures/median_price_room_type.png)
 
-## Research Question
-How do Airbnb prices vary across Seattle neighborhoods, and what listing characteristics help explain those differences?
-
 ## My Contribution
 - Cleaned and prepared the dataset for analysis
 - Handled missing price data by backfilling from prior quarter data where available
 - Trimmed extreme outliers to reduce skew
-- Filtered to comparable short term listings
+- Filtered to comparable short-term listings
 - Conducted analysis of price variation across neighborhood groups
 - Interpreted spatial pricing patterns and their relationship to listing characteristics
 
@@ -31,6 +31,12 @@ Seattle listings can be downloaded here:
 https://insideairbnb.com/get-the-data/
 
 The raw data is not included in this repository due to file size constraints. To reproduce the analysis, download the Seattle listings datasets for 2Q25 and 3Q25 (`listings.csv.gz`) and place them in the `data/` folder.
+
+## How to Run
+
+1. Download the required data and place it in the `data/` folder
+2. Run `01_data_cleaning.ipynb` to generate the cleaned dataset
+3. Run `02_EDA.ipynb` to reproduce the analysis
 
 ## Methods
 The analysis includes:
