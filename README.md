@@ -1,106 +1,52 @@
-# Airbnb Pricing Analysis
-
-This project analyzes how Airbnb listing prices vary across neighborhoods and what factors drive those differences. It focuses on descriptive analysis using Seattle data from Inside Airbnb.
-
-This project focuses on descriptive analysis rather than causal modeling. The goal is to clearly understand pricing patterns and communicate insights clearly.
-
-This repository contains my individual contribution to a larger group project, including data cleaning and pricing analysis.
-
----
+# Airbnb Seattle Pricing Analysis
 
 ## Overview
+This project analyzes Airbnb listing prices in Seattle using public data from Inside Airbnb. The goal is to understand how prices vary across neighborhoods and what listing characteristics help explain those differences.
 
-Airbnb listings vary widely in price even within the same city. This analysis focuses on identifying the main factors that explain those differences, including location, property characteristics, and listing features.
+This repository contains my individual contribution to a larger group project. I was responsible for data cleaning and the analysis of neighborhood level pricing patterns.
 
----
+## Research Question
+How do Airbnb prices vary across Seattle neighborhoods, and what listing characteristics help explain those differences?
 
 ## My Contribution
-
-- Cleaned and prepared the raw Airbnb dataset
-- Identified and handled data issues such as outliers and inconsistent pricing
-- Designed and implemented the pricing analysis
-- Explored how neighborhood and listing characteristics relate to price
-
----
-
-## Key Questions
-
-1. How does pricing vary across neighborhoods?
-   - Which neighborhoods have the highest average prices
-   - How much variation exists within neighborhoods
-
-2. How do property characteristics relate to price?
-   - Room type, bedrooms, and accommodates
-   - Price per guest as a normalized metric
-
-3. What features are associated with higher prices within neighborhoods?
-   - Differences after accounting for size and capacity
-
----
+- Cleaned and prepared the dataset for analysis
+- Handled missing price data by backfilling from prior quarter data where available
+- Trimmed extreme outliers to reduce skew
+- Filtered to comparable short-term listings
+- Conducted analysis of price variation across neighborhood groups
+- Interpreted spatial pricing patterns and their relationship to listing characteristics
 
 ## Data
+This project uses data from Inside Airbnb, a publicly available dataset of Airbnb listings.
 
-[Source: Inside Airbnb (Seattle)](https://insideairbnb.com/get-the-data/)
+Seattle listings can be downloaded here:
+https://insideairbnb.com/get-the-data/
 
-The dataset includes listing level information such as:
-- price
-- neighborhood
-- room type
-- bedrooms and accommodates
-- amenities and review metrics
+The raw data is not included in this repository due to file size constraints. To reproduce the analysis, download the Seattle listings dataset (listings.csv.gz) and place it in the `data/` folder.
 
-Raw data is not included in this repository.
+## Methods
+The analysis includes:
+- cleaning and converting price data
+- backfilling missing values
+- trimming outliers
+- grouping neighborhoods into predefined clusters
+- comparing median prices across neighborhoods
+- analyzing listing size and room type patterns
 
----
-
-## Data Cleaning
-
-Cleaning steps are documented in `01_data_cleaning.ipynb`.
-
-Key decisions:
-- Convert boolean, percent, price, and date fields to usable data types
-- Removed listings with long minimum stays to avoid monthly pricing bias
-- Created price per guest to normalize across listing sizes
-- Investigated and handled extreme outliers
-
----
-
-## Analysis
-
-The main analysis is in `02_pricing_analysis.ipynb`.
-
-Approach:
-- Descriptive statistics and grouped summaries
-- Price normalization to compare across listings
-- Visual comparisons across neighborhoods and property types
-
----
-
-## Key Insights
-
-- Pricing varies significantly across neighborhoods, with central areas commanding higher prices
-- Property size and room type explain a large portion of price variation
-- Price per guest provides a more consistent comparison across listings
-- Some listings reflect monthly pricing and can distort nightly price analysis
-
----
-
-## Repository Structure
-
-airbnb-pricing-analysis/
-├── README.md
-├── notebooks/
-│   ├── 01_data_cleaning.ipynb
-│   └── 02_pricing_analysis.ipynb
-├── images/
-
----
+## Key Findings
+- Prices vary substantially across Seattle neighborhood groups
+- The highest priced areas are concentrated in central Seattle, near downtown and major commercial hubs
+- Larger listings and room type composition help explain part of the price differences
+- Median price is more reliable than average due to skew
 
 ## Tools
-
 - Python
 - pandas
-- matplotlib / seaborn
+- matplotlib
+- Jupyter Notebook
 
----
+## Limitations
+This is a descriptive analysis, not a causal model. The results show pricing patterns but do not establish causality.
 
+## Author
+Vlad Lee
