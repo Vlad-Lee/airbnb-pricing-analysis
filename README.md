@@ -11,10 +11,10 @@ This repository contains my individual contribution to a larger group project. I
 ![Neighborhood Prices](figures/neighborhood_prices.png)
 
 ### Price vs Bedrooms
-![Price vs Bedrooms](figures/bedrooms_price.png)
+![Price vs Bedrooms](figures/median_price_num_bedrooms.png)
 
 ### Price by Room Type
-![Room Type](figures/room_type_prices.png)
+![Room Type](figures/median_price_room_type.png)
 
 ## Research Question
 How do Airbnb prices vary across Seattle neighborhoods, and what listing characteristics help explain those differences?
