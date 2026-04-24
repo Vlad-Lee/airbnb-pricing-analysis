@@ -211,5 +211,6 @@ __marimo__/
 *.parquet
 .ipynb_checkpoints/
 .venv/
-/data
+/data/*
+!data/README.md
 venv/
