@@ -3,7 +3,7 @@
 ## Overview
 This project analyzes Airbnb listing prices in Seattle using public data from Inside Airbnb. The goal is to understand how prices vary across neighborhoods and what listing characteristics help explain those differences.
 
-This repository contains my individual contribution to a larger group project. I was responsible for data cleaning and the analysis of neighborhood level pricing patterns.
+This repository contains my individual contribution to a larger group project. I was responsible for data cleaning and the analysis of neighborhood-level pricing patterns.
 
 ## Research Question
 How do Airbnb prices vary across Seattle neighborhoods, and what listing characteristics help explain those differences?
@@ -12,32 +12,32 @@ How do Airbnb prices vary across Seattle neighborhoods, and what listing charact
 - Cleaned and prepared the dataset for analysis
 - Handled missing price data by backfilling from prior quarter data where available
 - Trimmed extreme outliers to reduce skew
-- Filtered to comparable short-term listings
+- Filtered to comparable short term listings
 - Conducted analysis of price variation across neighborhood groups
 - Interpreted spatial pricing patterns and their relationship to listing characteristics
 
 ## Data
 This project uses data from Inside Airbnb, a publicly available dataset of Airbnb listings.
 
-Seattle listings can be downloaded here:
+Seattle listings can be downloaded here:  
 https://insideairbnb.com/get-the-data/
 
-The raw data is not included in this repository due to file size constraints. To reproduce the analysis, download the Seattle listings datasets for 2Q25 and 3Q25 (listings.csv.gz) and place it in the `data/` folder.
+The raw data is not included in this repository due to file size constraints. To reproduce the analysis, download the Seattle listings datasets for 2Q25 and 3Q25 (`listings.csv.gz`) and place them in the `data/` folder.
 
 ## Methods
 The analysis includes:
-- cleaning and converting price data
-- backfilling missing values
-- trimming outliers
-- grouping neighborhoods into predefined clusters
-- comparing median prices across neighborhoods
-- analyzing listing size and room type patterns
+- converting price data to numeric format
+- backfilling missing prices using prior quarter data
+- trimming extreme outliers (top 1 percent)
+- filtering to comparable short-term listings
+- aggregating prices at the neighborhood group level
+- analyzing relationships between price, listing size, and room type
 
 ## Key Findings
 - Prices vary substantially across Seattle neighborhood groups
 - The highest priced areas are concentrated in central Seattle, near downtown and major commercial hubs
 - Larger listings and room type composition help explain part of the price differences
-- Median price is more reliable than average due to skew
+- Median price provides a more stable measure than average price due to skew
 
 ## Tools
 - Python
@@ -46,7 +46,7 @@ The analysis includes:
 - Jupyter Notebook
 
 ## Limitations
-This is a descriptive analysis, not a causal model. The results show pricing patterns but do not establish causality.
+This is a descriptive analysis and does not establish causal relationships. The results highlight pricing patterns but do not isolate the underlying drivers of those differences.
 
 ## Author
 Vlad Lee
