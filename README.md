@@ -5,6 +5,17 @@ This project analyzes Airbnb listing prices in Seattle using public data from In
 
 This repository contains my individual contribution to a larger group project. I was responsible for data cleaning and the analysis of neighborhood-level pricing patterns.
 
+## Example Results
+
+### Neighborhood Price Differences
+![Neighborhood Prices](figures/neighborhood_prices.png)
+
+### Price vs Bedrooms
+![Price vs Bedrooms](figures/bedrooms_price.png)
+
+### Price by Room Type
+![Room Type](figures/room_type_prices.png)
+
 ## Research Question
 How do Airbnb prices vary across Seattle neighborhoods, and what listing characteristics help explain those differences?
 
