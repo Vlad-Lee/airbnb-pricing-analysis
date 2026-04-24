@@ -22,7 +22,7 @@ This project uses data from Inside Airbnb, a publicly available dataset of Airbn
 Seattle listings can be downloaded here:
 https://insideairbnb.com/get-the-data/
 
-The raw data is not included in this repository due to file size constraints. To reproduce the analysis, download the Seattle listings dataset (listings.csv.gz) and place it in the `data/` folder.
+The raw data is not included in this repository due to file size constraints. To reproduce the analysis, download the Seattle listings datasets for 2Q25 and 3Q25 (listings.csv.gz) and place it in the `data/` folder.
 
 ## Methods
 The analysis includes:
